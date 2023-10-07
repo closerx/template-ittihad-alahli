@@ -4,14 +4,8 @@
   box-sizing: border-box;
 }
 
-@media screen and (max-width:480px){
-      
-	.container{
-	  margin: auto;
-	  width: 95%;
-	  height: 100vh;
-	  border: 2px solid red;
-	}
+
+	
 	
 	
 	.navbar{
@@ -32,8 +26,8 @@
 	  position: relative;
 	  top: 10px;
 	  right: 5px;
-	  width: 10%;
-	  height: 10%;
+	  width: 80px;
+	  height: 80px;
 	}
 	.list{
 	  display: flex;
@@ -42,12 +36,12 @@
 	  margin-bottom: 10px;
 	}
 	.list a{
-	  border: 1px solid #c2d0a9;
+	  border: 3px solid #c2d0a9;
 	  border-radius: 10px;
-	  padding:0px 5px;
+	  
 	}
 	.action{
-	  border: 1px solid #c2d0a9;
+	  border: 3px solid #c2d0a9;
 	  background-color: #eef3dd;
 	}
 	.list a:hover{
@@ -56,7 +50,7 @@
 	
 	.loading{
 	  width: 100%;
-	  height: 150px;
+	  height: 300px;
 	  border-top: 2px solid #c2d0a9;
 	  background-image: url('img/loading.jpg');
 	}
@@ -64,7 +58,7 @@
 	  text-align: center;
 	  position: relative;
 	  top: 50px;
-	  font-size: 15px;
+	  font-size: 50px;
 	}
 	.loading .btn-match{
 	  color: #000;
@@ -73,19 +67,24 @@
 	  border-radius: 30px;
 	  border: 1px solid #c2d0a9;
 	  position: relative;
-	  top: 70px;
-	  left: 120px;
+	  top: 90px;
+	  left: 40%;
+	  font-size:30px;
+	  font-weight: bold;
 	}
 	.info{
 	  margin: 10px 0px;
 	  padding: 20px 0px;
+	  border:2px solid red;
 	}
 	.info h3{
-	  padding: 0px 10px;
+	  padding: 0px 30px;
+	  font-size:40px;
 	}
 	.info .info-text{
 	  color: #ccc;
-	  padding: 20px 10px;
+	  font-size:30px;
+	  padding: 20px 30px;
 	}
 	#status{
 	  border:none;
@@ -218,8 +217,9 @@
 	}
 	  .card{
 	   
-	    width: 100%;
-	    height: 200px;
+	    width: auto;
+	    height: 500px;
+	    margin: 0 30px;
 	    background-color: #fae6dc;
 	    border-radius: 30px;
 	    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -281,9 +281,9 @@
 	    right: 3px;
 	  }
 	  .card2{
-      margin: 20px 0;
-	    width: 100%;
-	    height: 200px;
+      margin: 20px;
+	    width: auto;
+	    height: 500px;
 	    background-color: #fff5dc;
 	    border-radius: 30px;
 	    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -372,382 +372,25 @@ footer
    left:310px;
  }
  
- 
-} 
-/*end @media */*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+@media screen and (max-width:1024px) {
+     .navbar{
+       margin-bottom:50px;
+     }
+      .navbar h3{
+        font-size: 50px;
+        text-align:center;
+        position: relative;
+        top:30px;
+      }
+      .list a{
+	      border: 1px solid #c2d0a9;
+	      border-radius: 50px;
+	      padding:15px;
+	      font-size: 40px;
+      } 
+   
+      
 }
 
-@media screen and (max-width:767px){
-      
-	.container2{
-	  margin: auto;
-	  width: 95%;
-	  height: 100vh;
-	  border: 2px solid red;
-	}
-	
-	
-	.navbar{
-	  display: flex;
-	  justify-content: space-between;
-	}
-	.navbar h3{
-	  position: relative;
-	  top: 20px ;
-	}
-	.img-menu{
-	  position: relative;
-	  top: 10px;
-	  width: 10%;
-	  height: 10%;
-	}
-	.img-moon{
-	  position: relative;
-	  top: 10px;
-	  right: 5px;
-	  width: 10%;
-	  height: 10%;
-	}
-	.list{
-	  display: flex;
-	  justify-content: space-between;
-	  margin-top:30px;
-	  margin-bottom: 10px;
-	}
-	.list a{
-	  border: 1px solid #c2d0a9;
-	  border-radius: 10px;
-	  padding:0px 5px;
-	}
-	.action{
-	  border: 1px solid #c2d0a9;
-	  background-color: #eef3dd;
-	}
-	.list a:hover{
-	  background-color: #eef3dd;
-	}
-	
-	.loading{
-	  width: 100%;
-	  height: 150px;
-	  border-top: 2px solid #c2d0a9;
-	  background-image: url('img/loading.jpg');
-	}
-	.loading p{
-	  text-align: center;
-	  position: relative;
-	  top: 50px;
-	  font-size: 15px;
-	}
-	.loading .btn-match{
-	  color: #000;
-	  background-color: #dff8b1;
-	  padding: 10px;
-	  border-radius: 30px;
-	  border: 1px solid #c2d0a9;
-	  position: relative;
-	  top: 70px;
-	  left: 120px;
-	}
-	.info{
-	  margin: 10px 0px;
-	  padding: 20px 0px;
-	}
-	.info h3{
-	  padding: 0px 10px;
-	}
-	.info .info-text{
-	  color: #ccc;
-	  padding: 20px 10px;
-	}
-	#status{
-	  border:none;
-	  border-radius: 30px;
-	  width:100px;
-	  position:absolute;
-	  top: 450px;
-	  left: 35%;
-	  text-align: center;
-	  background-color: #e2c1ad;
-	}
-	#status2{
-	  border:none;
-	  border-radius: 30px;
-	  width:100px;
-	  position:absolute;
-	  top: 700px;
-	  left: 35%;
-	  text-align: center;
-	  background-color: #f2d99e;
-	}
-	
-  
-	#home{
-	  color: gray;
-	  position: absolute;
-	  top: 450px;
-	  left: 30px;
-	}
-	#away{
-	  color: gray;
-	  position: absolute;
-	  float: right;
-	  top: 450px;
-	  right: 50px;
-	}
-	#home2{
-	  color: gray;
-	  position: absolute;
-	  top: 670px;
-	  left: 30px;
-	}
-	#away2{
-	  color: gray;
-	  position: absolute;
-	  float: right;
-	  top: 670px;
-	  right: 50px;
-	}
-	#ball{
-	  width: 20px;
-	  height: 20px;
-	  position: absolute;
-	  top: 520px;
-	  left: 100px;
-	}
-	#ball-text {
-	  position: absolute;
-	  top: 520px;
-	  left: 10px;
-	}
-	#ball2{
-	  width: 20px;
-	  height: 20px;
-	  position: absolute;
-	  top: 740px;
-	  left: 125px;
-	}
-	#ball-text2{
-	  position: absolute;
-	  top: 740px;
-	  left: 10px;
-	}
-	#stad{
-	  width: 20px;
-	  height: 20px;
-	  position: absolute;
-	  top: 520px;
-	  right: 10px;
-	}
-	#stad-text{
-	  position: absolute;
-	  top: 520px;
-	  right:40px;
-	}
-	#stad2{
-	  width: 20px;
-	  height: 20px;
-	  position: absolute;
-	  top: 740px;
-	  right: 10px;
-	}
-	#stad-text2{
-	  position: absolute;
-	  top: 740px;
-	  right:40px;
-	}
-	
-	.goll{
-	  position: absolute;
-	  top: 640px;
-	  left: 40%;
-	  font-size: 30px;
-	}
-	
-	
-	.time{
-	  position: absolute;
-	  top:380px;
-	  left: 40%;
-	}
-	.time2{
-	  position: absolute;
-	  top: 600px;
-	  left: 40%;
-	}
-	hr{
-	  width: 100%;
-	  position:absolute;
-	  top: 500px;
-	  color: #ddd !important;
-	  opacity: 0.5;
-	}
-	.hr2{
-	  width: 100%;
-	  position:absolute;
-	  top: 730px;
-	  color: #ddd !important;
-	  opacity: 0.5;
-	}
-	  .card{
-	   
-	    width: 100%;
-	    height: 200px;
-	    background-color: #fae6dc;
-	    border-radius: 30px;
-	    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-	  }
-	  .team1-img{
-	    width: 50px;
-	    height: 50px;
-	    position: absolute;
-	    top: 370px;
-	    left: 40px;
-	  }
-	  .team1-img2{
-	    width: 50px;
-	    height: 50px;
-	    position: absolute;
-	    top: 600px;
-	    left: 40px;
-	  }
-	  .team1{
-	    width: 100px;
-	    position: absolute;
-	    top: 420px;
-	    left: 30px;
-	  }
-	  .team1-2{
-	    width: 100px;
-	    position: absolute;
-	    top: 650px;
-	    left: 30px;
-	  }
-	  .team2-img{
-	    width: 50px;
-	    height: 50px;
-	    float: right;
-	    position: absolute;
-	    top: 370px;
-	    right:40px;
-	  }
-	  .team2-img2{
-	    width: 50px;
-	    height: 50px;
-	    float: right;
-	    position: absolute;
-	    top: 600px;
-	    right:40px;
-	  }
-	  .team2{
-	    width: 100px;
-	    position: absolute;
-	    float: right;
-	    top: 420px;
-	    right: 3px;
-	  }
-	  .team2-2{
-	    width: 100px;
-	    position: absolute;
-	    float: right;
-	    top: 650px;
-	    right: 3px;
-	  }
-	  .card2{
-      margin: 20px 0;
-	    width: 100%;
-	    height: 200px;
-	    background-color: #fff5dc;
-	    border-radius: 30px;
-	    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-	  }
-	  .card3{
-margin: 20px 0;
-	    width: 100%;
-	    height: 200px;
-	    background-color:#ddf6b1;
-	    border-radius: 30px;
-	    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-	  }
-	  .card-img{
-	    width: 100%;
-	    height: 100%;
-	    background-image: url('img/Py1.png');
-	    background-repeat: no-repeat;
-	    background-size: contain;
-	    background-position: center;
-	    opacity: 0.1;
-	  }
-.card-img2{
-	    width: 100%;
-	    height: 100%;
-	    background-image: url('img/Py2.png');
-	    background-repeat: no-repeat;
-	    background-size: contain;
-	    background-position: center;
-	    opacity: 0.1;
-	  }
-	  .card-img3{
-	    width: 100%;
-	    height: 100%;
-	    background-image: url('img/Py3.png');
-	    background-repeat: no-repeat;
-	    background-size: contain;
-	    background-position: center;
-	    opacity: 0.1;
-	  }
 
-
-/*
-footer
-*/
-.fofo{
-   border-radius:5px 5px 0 0;
-   background-color: #fff;
-   width: 100%;
-   position:fixed;
-   bottom:0;
-   height: 50px;
-   display: flex;
-   justify-content:space-between;
-   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
- }
- 
- .fofo  a{
-   margin: 25px 5px;
-   position: static;
-   bottom: 0;
-   font-size: 12px;
- }
- .fofo a:nth-child(1){
-   font-weight: bold;
- }
- 
- 
- .fofo #img-match,#img-news,
- #img-leg,#img-star{
-   width: 20px;
-   height: 20px;
-   position:absolute;
-   top:3px;
-   left: 15px;
- }
- .fofo #img-match{
-   background-color: #ccc;
- }
- .fofo #img-news{
-   left: 110px;
- }
- .fofo #img-leg{
-   left: 210px;
- }
- .fofo #img-star{
-   left:310px;
- }
- 
- 
-} 
 /*end @media */
