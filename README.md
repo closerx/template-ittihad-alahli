@@ -1,2 +1,2 @@
-# templet-ittihad-alahli
+# template-ittihad-alahli
 Ittihad vs Alahli
