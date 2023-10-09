@@ -7,117 +7,162 @@
   <meta name="description" content="A sample website, nothin fancy">
   <meta http-equiv="author" content="Francisco Campos Arias">
   <meta name="keywords" content="html, css, web, design, sample, practice">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style2.css">
 
+    <script src="https://cdn.tailwindcss.com"></script>
+<style>
+  *{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+   
+  }
   
+  
+   .fofo{
+   border-radius:10px 10px 0 0;
+   background-color: #fff;
+   width: 60%;
+   position:fixed;
+   bottom:0;
+   left:0;
+   height: 50px;
+   display: flex;
+   justify-content:space-between;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ }
+ 
+ .fofo  a{
+   margin: 25px 5px;
+   position: relative;
+   top:90px;
+   left:30px;
+   font-size: 10px;
+ }
+ .fofo a:nth-child(1){
+   font-weight: bold;
+ }
+ 
+ 
+ .fofo #img-match,#img-news,
+ #img-leg,#img-star{
+   width: 80px;
+   height: 80px;
+   position:relative;
+   top:10px;
+   left:-100px;
+ }
+ .fofo #img-match{
+   background-color: #ccc;
+ }
+ .fofo #img-news{
+   left: -90px;
+ }
+ .fofo #img-leg{
+   left: -90px;
+ }
+ .fofo #img-star{
+   left:-100px;
+ }
+
+</style>
 </head>
 
-<body>
+<body >
 
-  <div class="container">
-    <div class="navbar">
-      <img class="img-menu" src="navimg/menus.png">
-      <h3>Matches</h3>
-      <img class="img-moon" src="navimg/moon.png">
+  <div class=" border-2 border-rose-300">
+    
+    
+    <div class="sm: flex justify-between border-2 p-3">
+      <img class="img-menu sm:w-10 h-10 " src="navimg/menus.png">
+      <h3 class="text-[30px] font-bold ">Matches</h3>
+      <img class="img-moon sm:w10 h-10" src="navimg/moon.png">
 
     </div>
-    <div class="list">
-      <a>Yesterday</a>
-      <a class="action">Today</a>
-      <a>Tomorrow</a>
-      <a>Fri 02 Feb</a>
+    <div class="sm: flex justify-between ">
+      <a class="font-bold border-2 border-[#d1dfad] rounded-lg my-3 ">Yesterday</a>
+      <a class="font-bold border-2 border-[#d1dfad] rounded-lg bg-[#edf0dd] my-3 hover:bg-gray-300 ">Today</a>
+      <a class="font-bold border-2 border-[#d1dfad] rounded-lg my-3 ">Tomorrow</a>
+      <a class="font-bold border-2 border-[#d1dfad] rounded-lg my-3">Fri 02 Feb</a>
     </div>
 
-    <div class="loading">
-      <p>Your favourite team isn't playing today.</p>
-      <button class="btn-match">ALL MATCHES</button>
+    <div class="sm: bg-[url('/img/loading.jpg')] w-auto h-[150px] md:bg-no-repeat bg-cover">
+      <p class="flex item-center justify-center pt-[40px] ">Your favourite team isn't playing today.</p>
+      <button class="sm:item-center justify-center mt-8 ml-[35%] bg-[#d1dfad] rounded-lg p-1 hover:bg-gray-300 border-2 border-[#d1dfad] shadow-md ">ALL MATCHES</button>
     </div>
 
     <div class="info">
-      <h3>Suggested Matches</h3>
-      <p class="info-text">interesting matches happening today</p>
+      <h3 class="font-bold ml-3 ">Suggested Matches</h3>
+      <p class="ml-3 text-gray-400 ">Interesting matches happening today</p>
 
 
-      <div class="card" style="background-color: #fae6dc;">
+      <div class="card bg-[#fae6dc] m-3 rounded-lg  h-[200px] shadow-2xl ">
 
-        <img class="team1-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Logo_FC_Bayern_M%C3%BCnchen_%282002%E2%80%932017%29.svg/1200px-Logo_FC_Bayern_M%C3%BCnchen_%282002%E2%80%932017%29.svg.png">
-        <h4 class="team1">FC Bayern</h4>
-        <span id="home">Home</span>
-        <div class="card-img3"></div>
-        <span class="time">09:20 PM</span>
-        <p id="status">it hasn't started yet</p>
-        <img class="team2-img" src="https://seeklogo.com/images/A/Ajax_Amsterdam-logo-AA9D06DF56-seeklogo.com.png">
-
-        <h4 class="team2">AFC Ajax</h4>
-        <span id="away">Away</span>
-        <hr>
-        <img id="ball" src="img/ball.png">
-        <span id="ball-text">Bundesilga</span>
-        <img id="stad" src="img/stadium.png">
-        <span id="stad-text">Camp nou</span>
-
-      </div>
-
-
-      <div class="card" style="background-color: #fff5dc;">
-
-        <img class="team1-img" src="https://seeklogo.com/images/F/fc-nantes-atlantique-logo-F0DA017A3F-seeklogo.com.png">
-        <h4 class="team1">FC Nantes</h4>
-        <span id="home">Home</span>
-        <div class="card-img2"></div>
-        <span class="time">09:20 PM</span>
+        <img class="sm:w-[50px] h-[50px]  relative top-3 left-[10%]  " src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Logo_FC_Bayern_M%C3%BCnchen_%282002%E2%80%932017%29.svg/1200px-Logo_FC_Bayern_M%C3%BCnchen_%282002%E2%80%932017%29.svg.png">
+        <h4 class=" w-[100px] relative left-[7%] top-5 text-sm ">FC Bayern</h4>
+        <span class="relative top-[25px] float-right right-5 text-gray-400 ">Home</span>
         
-        <p id="status2">Game Over</p>
-        <img class="team2-img" src="https://seeklogo.com/images/F/F_C__Porto-logo-3BB4DAAEA2-seeklogo.com.png">
+          <img class="sm:w-[100%] h-full relative left-20 top-[-70px] opacity-25" src="img/Py3.png">
+        
+        <span class="sm: relative left-[40%] bottom-[120%] text-bold ">09:20 PM</span>
+        <p class="border-2 border-rose-300 bg-rose-300 w-[100px] rounded-full text-center relative left-[35%] bottom-[200px] text-sm">it hasn't started yet</p>
+        <img class="sm:w-[50px] h-[50px]  relative top-[-320px] left-[80%]" src="https://seeklogo.com/images/A/Ajax_Amsterdam-logo-AA9D06DF56-seeklogo.com.png">
 
-        <h4 class="team2">FC Porto</h4>
-        <span id="away">Away</span>
-        <hr>
-        <img id="ball" src="img/ball.png">
-        <span id="ball-text">Bundesilga</span>
-        <img id="stad" src="img/stadium.png">
-        <span id="stad-text">Camp nou</span>
+        <h4 class="sm:w-[100px]  relative top-[-310px] left-[80%] text-sm ">AFC Ajax</h4>
+        <span class="relative bottom-[320px] left-6 text-gray-400 ">Away</span>
+        <hr class="relative bottom-[140%] border-1 border-gray-300 ">
+        <img class="w-5 relative bottom-[134%] left-[30%]" src="img/ball.png">
+        <span class="relative bottom-[145%] left-4">Bundesilga</span>
+        <img class="w-6 relative bottom-[145%] right-[30%] float-right " src="img/stadium.png">
+        <span class="relative bottom-[145%] right-[-2%] float-right ">Camp nou</span>
 
       </div>
       
+       <div class="card bg-[#fff5dc] m-3 rounded-lg  h-[200px] shadow-2xl ">
       
-            <div class="card" style="background-color:#ddf6b9;">
+         <img class="sm:w-[50px] h-[50px]  relative top-3 left-[10%]  " src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Logo_FC_Bayern_M%C3%BCnchen_%282002%E2%80%932017%29.svg/1200px-Logo_FC_Bayern_M%C3%BCnchen_%282002%E2%80%932017%29.svg.png">
+         <h4 class=" w-[100px] relative left-[7%] top-5 text-sm ">FC Bayern</h4>
+         <span class="relative bottom-[70%] float-right left-[25%] text-gray-400 ">Home</span>
+      
+         <img class="sm:w-[100%] h-full relative left-20 top-[-70px] opacity-25" src="img/Py2.png">
+      
+         <span class="sm: relative left-[40%] bottom-[120%] text-bold ">09:20 PM</span>
+         <p class=" bg-[#fae0a5] w-[100px] rounded-full text-center relative left-[35%] bottom-[200px] text-sm">Game Over </p>
+         <img class="sm:w-[50px] h-[50px]  relative top-[-300px] left-[80%]" src="https://seeklogo.com/images/A/Ajax_Amsterdam-logo-AA9D06DF56-seeklogo.com.png">
+         
+         <span class=" relative bottom-[150%] left-[45%] font-bold text-lg">0 - 0</span>
+         
+         <h4 class="sm:w-[100px]  relative top-[-320px] left-[80%] text-sm ">AFC Ajax</h4>
+         <span class="relative bottom-[320px] left-6 text-gray-400 ">Away</span>
+         <hr class="relative bottom-[140%] border-1 border-gray-300 ">
+         <img class="w-5 relative bottom-[134%] left-[40%]" src="img/ball.png">
+         <span class="relative bottom-[145%] left-4">Europa League</span>
+         <img class="w-6 relative bottom-[145%] right-[30%] float-right " src="img/stadium.png">
+         <span class="relative bottom-[145%] right-[-2%] float-right ">Camp nou</span>
+      
+       </div>
 
-        <img class="team1-img" src="https://ww2.freelogovectors.net/wp-content/uploads/2023/09/al-ittihad-club-logo-freelogovectors.net_-640x474.png?lossy=1&ssl=1&fit=640%2C474">
-        <h4 class="team1">FC Ittihad</h4>
-        <span id="home">Home</span>
-        <div class="card-img2"></div>
-        <span class="time">09:20 PM</span>
-              <span class="goll">0 - 0</span>
-        <p id="status2">Game Over</p>
-        <img class="team2-img" src="https://upload.wikimedia.org/wikipedia/ar/thumb/b/b2/Al-Ahli_Logo.svg/884px-Al-Ahli_Logo.svg.png?20180330164420">
 
-        <h4 class="team2">FC Alahli</h4>
-        <span id="away">Away</span>
-        <hr>
-        <img id="ball" src="img/ball.png">
-        <span id="ball-text">Bundesilga</span>
-        <img id="stad" src="img/stadium.png">
-        <span id="stad-text">Camp nou</span>
-
-      </div>
+       
 
     </div>
-  </div>
+
+     
+  </div> <!-- -->
 
 
-  <div class="fofo">
+ <div class="fofo">
 
-    <a>Matches</a>
-    <img id="img-match" src="footer/matchs.png">
+   <a>Matches</a>
+   <img class="hidden" src="footer/matchs.png">
 
-    <a>News</a>
-    <img id="img-news" src="footer/news.png">
-    <a>Leagues</a>
-    <img id="img-leg" src="footer/league.png">
-    <a>Following</a>
-    <img id="img-star" src="footer/star.png">
-  </div>
+   <a>News</a>
+   <img class="hidden" src="footer/news.png">
+   <a>Leagues</a>
+   <img class="hidden" src="footer/league.png">
+   <a>Following</a>
+   <img class="hidden" src="footer/star.png">
+ </div>
 </body>
 
-          </html>
+      </html>
